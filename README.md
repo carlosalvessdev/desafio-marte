@@ -1,9 +1,9 @@
 # desafio-marte
-Desafio Marte Conta Azul
-Objetivo:
+# Desafio Marte Conta Azul
+# Objetivo
 O objetivo desse desafio é demonstrar sua experiência e conhecimento como desenvolvedor, assim saberemos como você pensa e como resolve problemas na vida real.
 
-O Problema:
+# O Problema
 Um time de robôs devem ser colocados pela NASA para explorar um terreno em Marte.
 Esse terreno, que é retangular, precisa ser navegado pelos robôs de tal forma que suas câmeras acopladas possam obter uma visão completa da região, enviando essas imagens novamente para a Terra.
 
@@ -15,7 +15,7 @@ Exemplo: Se o robô está na posição (0,0,N), o comando "MML" fará ele chegar
 
 Escreva um programa que permita aos engenheiros da NASA enviar comandos para o Robô e saber onde ele se encontra. Os engenheiros irão rodar testes no seu software para garantir que ele se comporta da forma esperada, antes de enviar o Robô para marte.
 
-Alguns cenários de teste:
+# Alguns cenários de teste
 Movimento com rotações para direita:
 curl -s --request POST http://localhost:8080/rest/mars/MMRMMRMM
 Saída esperada: (2, 0, S)
@@ -32,7 +32,7 @@ Posição inválida:
 curl -s --request POST http://localhost:8080/rest/mars/MMMMMMMMMMMMMMMMMMMMMMMM
 Saída esperada: 400 Bad Request
 
-Requisitos técnicos:
+# Requisitos técnicos
 Deve ter teste
 O desafio deve ser entregue escrito utilizando Java 8;
 O projeto deverá ser compilado utilizando o Maven;
