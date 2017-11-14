@@ -16,26 +16,26 @@ Exemplo: Se o robô está na posição (0,0,N), o comando "MML" fará ele chegar
 Escreva um programa que permita aos engenheiros da NASA enviar comandos para o Robô e saber onde ele se encontra. Os engenheiros irão rodar testes no seu software para garantir que ele se comporta da forma esperada, antes de enviar o Robô para marte.
 
 # Alguns cenários de teste
-Movimento com rotações para direita:
+### Movimento com rotações para direita:
 curl -s --request POST http://localhost:8080/rest/mars/MMRMMRMM
 Saída esperada: (2, 0, S)
-Movimento para esquerda:
+### Movimento para esquerda:
 Entrada: curl -s --request POST http://localhost:8080/rest/mars/MML
 Saída esperada: (0, 2, W)
-Repetição da requisição com movimento para esquerda:
+### Repetição da requisição com movimento para esquerda:
 Entrada: curl -s --request POST http://localhost:8080/rest/mars/MML
 Saída esperada: (0, 2, W)
-Comando inválido:
+### Comando inválido:
 curl -s --request POST http://localhost:8080/rest/mars/AAA
 Saída esperada: 400 Bad Request
-Posição inválida:
+### Posição inválida:
 curl -s --request POST http://localhost:8080/rest/mars/MMMMMMMMMMMMMMMMMMMMMMMM
 Saída esperada: 400 Bad Request
 
 # Requisitos técnicos
-Deve ter teste
-O desafio deve ser entregue escrito utilizando Java 8;
-O projeto deverá ser compilado utilizando o Maven;
-Deverão ser utilizadas apenas as biblioteca do SpringBoot e JUnit;
-O desafio será executado como uma aplicação SpringBoot;
-A interface de comunicação com o robô é REST;
+- Deve ter teste
+- O desafio deve ser entregue escrito utilizando Java 8;
+- O projeto deverá ser compilado utilizando o Maven;
+- Deverão ser utilizadas apenas as biblioteca do SpringBoot e JUnit;
+- O desafio será executado como uma aplicação SpringBoot;
+- A interface de comunicação com o robô é REST;
